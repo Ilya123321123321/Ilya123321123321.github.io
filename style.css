@@ -1,3 +1,28 @@
+body{
+    background: orangered;
+}
+.B1 {
+    display: flex;
+    justify-content: center;
+}
+.B1 h1 {
+    font-size: 30px;
+    background-color: #42694f;
+    color: white;
+    }
+
+.a4 {
+    width: fit-content;
+}
+.a4 h1 {
+    font-size: 45px;
+}
+
+.A1 h2 {
+    background-color: aqua;
+    color: rgb(8, 0, 0);
+}
+
 .verx>ul>li{
     list-style: none;
 }
@@ -5,3 +30,6 @@
     display: flex;
     justify-content: space-between ;
 }
+        a {
+    text-decoration: none;
+        }
