@@ -18,14 +18,23 @@ body{
     font-size: 45px;
 }
 
-.A1 h2 {
-    background-color: aqua;
-    color: rgb(8, 0, 0);
-}
+.A1 h2 {    
+    color: black;
+    background-color:#42694f ;
+       }
 
+.verx {
+    display:block;
+}
 .verx>ul>li{
     list-style: none;
+    display: flex;
 }
+.verx>ul>li img {
+    width: 75px;
+    height: 75px;
+}
+
 .verx>ul{
     display: flex;
     justify-content: space-between ;
@@ -33,3 +42,17 @@ body{
         a {
     text-decoration: none;
         }
+
+.A2 h1 {
+    font-size: 33px;
+    background-color: white;
+    width: fit-content;
+}
+
+.A3 h1 {
+    display: flex;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
