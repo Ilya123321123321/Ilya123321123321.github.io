@@ -1,6 +1,39 @@
+.header__title {
+    font-size: 50px;
+    background-color: #42694f;
+    color: white;
+    }
+.header__menu1_item>ul>li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between ;
+    color: black;
+    background-color:#42694f
+}
+
+.header__menu1_item>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between ;
+}
+
 body{
     background: orangered;
 }
+
+.header__menu1_item>ul>li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between ;
+    color: black;
+    background-color:#42694f
+}
+
+
+
+
+
+
 .B1 {
     display: flex;
     justify-content: center;
