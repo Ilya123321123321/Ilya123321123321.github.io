@@ -15,6 +15,7 @@
         document.body.append(startBox);
 
         function draw(size){
+            if(size>1) {               //++++++++++++++++
             let box=document.createElement('div');
             box.style.width=size +'px';
             box.style.height=size+'px';
@@ -22,6 +23,7 @@
             document.body.append(box);
 
             draw(size/2);
+            } //++++++++++++++
 
         }
 
