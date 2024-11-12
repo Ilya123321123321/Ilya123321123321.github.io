@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="t0" placeholder="введите исходный текст">
+    <input type="text" id="key" placeholder="ключ">
+    <button onclick="encrypt()">Зашифровать</button>
+    <div id="encrypted"></div>
+
+<script>
+    let text0 = document.getElementById('t0');
+    let key = document.getElementById('key');
+    let encr = document.getElementById('encrypted');
+
+    function encrypt(){           
+        let t = text0.value;
+        let len = t.length;
+
+        for (let i=0; i < len; i++){
+            let uniCode = t.charCodeAt(i);
+            encr.innerText += uniCode + '.';
+        }
+    }
+</script>
+
+    <br>--------------------------------------------<br>
+    <input type="text" id="t1" placeholder="введите зашифрованный текст">
+    <button onclick="decrypt()">Расшифровать</button>
+    <div id="deCrypted"></div>
+
+<script>
+
+    let text1 = document.getElementById('t1');
+    let decr = document.getElementById('deCrypted');
+
+    function decrypt(){
+        let t = text1.value;
+        let len = t.length;
+            for (let i=0; i < len; i++){
+                let uniCode = t.charCodeAt(i);
+                decr.innerText += String.fromCharCode (uniCode - parseInt(key.value));
+            }
+    }
+
+</script>
+
+</body>
+</html>
