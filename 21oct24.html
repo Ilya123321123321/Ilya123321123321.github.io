@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 октября 2024</title>
+    <style>
+    body {
+        background-color: AntiqueWhite;
+        background: radial-gradient(rgb(255, 255, 255) 5%, rgb(61, 225, 152) 35%, rgb(255, 255, 255) 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        text-align: center;
+    }
+    @keyframes anim{
+        0%{transform: rotate(360deg);}
+        100%{transform: rotate(0);}
+    }
+    .but{
+        text-align: center
+    }
+
+    div{
+        animation: none;
+    }
+    button{
+        padding: 8px 20px;
+        margin-bottom: 20px;
+        font-size: 22px;
+        animation: anim 2s;
+        background: rgb(255, 255, 255);
+        color: black;
+    }
+    button:focus{
+        background: rgb(44, 196, 39);
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <div onclick="show()" class="but">
+        <button>Show</button>
+    </div>
+    
+</body>
+<script>
+
+  let myDate = new Date();
+    hour = myDate.getHours();
+    min = myDate.getMinutes();
+    sec = myDate.getSeconds();
+    document.write(hour +':'+ min+':'+ sec)
+
+    let myDiv = document.createElement('div');
+    myDiv.innerText = 'Мой div';
+    document.body.append(myDiv);
+function show(){
+    for(let i=0; i<7; i++){
+    let button = document.createElement('button');
+    button.innerText = 'Me'; 
+    document.body.append(button);
+    button.style.marginRight = '5px'
+    button.style.backgroundImage = 'url(furret.gif)'
+    button.style.color = '#fff'
+    button.style.backgroundSize = 'cover'
+    button.style.cursor = 'pointer';
+    button.style.width = (i+200)+'px';
+    button.style.height = (i+400) +'px';
+    button.style.borderRadius = (i+15)+ 'px';
+    button.style.fontSize = (i+20) +'px';
+    }
+}
+    
+
+</script>
+</html>
